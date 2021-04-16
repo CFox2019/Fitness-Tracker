@@ -1,3 +1,6 @@
+let exercise = [];
+let stat;
+
 init();
 
 async function init() {

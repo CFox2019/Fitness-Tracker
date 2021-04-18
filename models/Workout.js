@@ -15,16 +15,16 @@ const ExerciseSchema = new Schema({
 		required: "duration of exercise is required!"
 	},
 	weight: {
-		type: Number,
-		required: "weight lifted is required!"
+		type: Number
 	},
 	reps: {
-		type: Number,
-		required: "number of reps is required!"
+		type: Number
 	},
 	sets: {
-		type: Number,
-		required: "number of sets is required!"
+		type: Number
+	},
+	totalDuration: {
+		type: Number
 	}
 });
 

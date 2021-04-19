@@ -14,6 +14,9 @@ const ExerciseSchema = new Schema({
 		type: Number,
 		required: "duration of exercise is required!"
 	},
+	distance: {
+		type: Number
+	},
 	weight: {
 		type: Number
 	},
@@ -21,9 +24,6 @@ const ExerciseSchema = new Schema({
 		type: Number
 	},
 	sets: {
-		type: Number
-	},
-	totalDuration: {
 		type: Number
 	}
 });

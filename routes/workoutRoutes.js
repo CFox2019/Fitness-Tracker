@@ -39,7 +39,26 @@ router.post("/api/workouts", ({ body }, res) => {
 
 // GET: /api/workouts/range
 router.get("/api/workouts/range", (req, res) => {
-  db.Workout.find({})
+  db.Workout.aggregate([
+    {
+      $addFields: {
+        totalDuration: {
+          $sum: "$exercises.duration"
+        },
+        totalDistance: {
+          $sum: "$exercises.distance"
+        },
+        totalWeight: {
+          $sum: "$exercises.weight"
+        },
+        totalReps: {
+          $sum: "$exercises.reps"
+        },
+        totalSets: {
+          $sum: "$exercises.sets"
+        }
+      }
+    }])
     .limit(7)
     .then(dbWorkout => {
       res.json(dbWorkout);

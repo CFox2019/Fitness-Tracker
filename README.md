@@ -23,7 +23,8 @@ run 'npm run watch'
 
 ![Fitness Tracker-1](public/images/fitness_tracker_1.png)
 ![Fitness Tracker- Add Exercise](public/images/fitness_tracker_2.png)
-![Fitness Tracker-Log](public/images/fitness_tracker_3.png)
+![Fitness Tracker- Log](public/images/fitness_tracker_3.png)
+![Fitness Tracker- Stats](public/images/fitness_tracker_stats.png)
 
 ## Contributing
 If you'd like to contribute to this project, start by forking the repository to your personal GitHub account. From there, make your changes and then open a Pull Request in this repository against the branch in your fork.
